@@ -1,0 +1,5 @@
+timestamp,action,price,indicators,result
+2025-01-22 15:16:44,analysis,1.04411,{'rsi': np.float64(62.77), 'ema_short': np.float64(1.044), 'ema_medium': np.float64(1.04411), 'ema_long': np.float64(1.04429), 'bb_upper': np.float64(1.04438), 'bb_lower': np.float64(1.04378), 'bb_sma': np.float64(1.04408)},None
+2025-01-22 15:16:48,analysis,1.044175,{'rsi': np.float64(62.77), 'ema_short': np.float64(1.04403), 'ema_medium': np.float64(1.0441), 'ema_long': np.float64(1.04428), 'bb_upper': np.float64(1.04438), 'bb_lower': np.float64(1.04378), 'bb_sma': np.float64(1.04408)},None
+2025-01-22 15:16:52,analysis,1.044165,{'rsi': np.float64(62.77), 'ema_short': np.float64(1.04406), 'ema_medium': np.float64(1.0441), 'ema_long': np.float64(1.04426), 'bb_upper': np.float64(1.04434), 'bb_lower': np.float64(1.04379), 'bb_sma': np.float64(1.04407)},None
+2025-01-22 15:16:57,analysis,1.04417,{'rsi': np.float64(62.77), 'ema_short': np.float64(1.04411), 'ema_medium': np.float64(1.04408), 'ema_long': np.float64(1.04425), 'bb_upper': np.float64(1.04432), 'bb_lower': np.float64(1.0438), 'bb_sma': np.float64(1.04406)},None
