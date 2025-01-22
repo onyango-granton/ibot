@@ -1,0 +1,2 @@
+timestamp,price,rsi,ema_short,ema_medium,ema_long,bb_upper,bb_lower,bb_middle,volume,signal
+2025-01-22 08:22:26,155.8975,49.37,155.89764,155.89554,155.85241,155.8994,155.893,155.8962,35,WARNING
