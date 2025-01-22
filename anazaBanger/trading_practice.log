@@ -1,0 +1,29 @@
+2025-01-22 08:43:22,214 - INFO - Starting practice session for EUR/USD
+2025-01-22 08:43:29,414 - INFO - Downloaded 1975 records for EURUSD=X
+2025-01-22 08:43:29,540 - ERROR - Error calculating indicators: Cannot set a DataFrame with multiple columns to the single column BB_upper
+2025-01-22 08:45:04,043 - INFO - Starting practice session for EUR/USD
+2025-01-22 08:45:06,438 - INFO - Downloaded 1975 records for EURUSD=X
+2025-01-22 08:45:06,480 - ERROR - Error calculating indicators: Cannot set a DataFrame with multiple columns to the single column BB_upper
+2025-01-22 08:49:49,094 - INFO - Starting practice session for EUR/USD
+2025-01-22 08:49:51,465 - INFO - Downloaded 1976 records for EURUSD=X
+2025-01-22 08:49:51,512 - ERROR - Error calculating indicators: Cannot set a DataFrame with multiple columns to the single column BB_upper
+2025-01-22 08:52:03,637 - INFO - Starting practice session for EUR/USD
+2025-01-22 08:52:06,070 - INFO - Downloaded 1976 records for EURUSD=X
+2025-01-22 08:52:06,132 - ERROR - Error calculating indicators: Cannot set a DataFrame with multiple columns to the single column BB_upper
+2025-01-22 09:01:01,850 - INFO - Starting practice session for EUR/USD
+2025-01-22 09:01:04,352 - INFO - Downloaded 1977 records for EURUSD=X
+2025-01-22 09:01:04,395 - ERROR - Error calculating indicators: Cannot set a DataFrame with multiple columns to the single column BB_upper
+2025-01-22 10:12:46,378 - INFO - Starting practice session for EUR/USD
+2025-01-22 10:12:49,530 - ERROR - 
+1 Failed download:
+2025-01-22 10:12:49,530 - ERROR - ['EURUSD=X']: ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\'query1.finance.yahoo.com\', port=443): Max retries exceeded with url: /v1/test/getcrumb (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x000001D758A1E0F0>: Failed to resolve \'query1.finance.yahoo.com\' ([Errno 11001] getaddrinfo failed)"))'))
+2025-01-22 10:12:49,549 - ERROR - Error downloading data for EURUSD=X: No data available for EURUSD=X.
+2025-01-22 10:14:48,939 - INFO - Starting practice session for EUR/USD
+2025-01-22 10:14:50,903 - INFO - Downloaded 1981 records for EURUSD=X
+2025-01-22 10:14:50,955 - ERROR - Error calculating indicators: Cannot set a DataFrame with multiple columns to the single column BB_upper
+2025-01-22 10:15:54,204 - INFO - Starting practice session for EUR/USD
+2025-01-22 10:15:56,043 - INFO - Downloaded 1982 records for EURUSD=X
+2025-01-22 10:15:56,127 - ERROR - Error calculating indicators: Cannot set a DataFrame with multiple columns to the single column BB_upper
+2025-01-22 10:17:03,912 - INFO - Starting practice session for EUR/USD
+2025-01-22 10:17:05,736 - INFO - Downloaded 1982 records for EURUSD=X
+2025-01-22 10:17:05,793 - ERROR - Error calculating indicators: Cannot set a DataFrame with multiple columns to the single column BB_upper
