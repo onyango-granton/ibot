@@ -5,7 +5,72 @@ import json
 import asyncio
 import logging
 
-class DerivTradingBot:
+class DerivTradingBot:import requests
+import websocket
+import json
+
+# IQ Option API URL
+API_URL = "https://api.iqoption.com/api"
+
+# Authenticate
+session = requests.Session()
+session.auth = ('your_email', 'your_password')
+response = session.get(f"{API_URL}/login")
+print(response.json())
+
+# WebSocket for real-time data
+def on_message(ws, message):
+    data = json.loads(message)
+    print(data)
+    # Implement your trading strategy here
+    action = trading_strategy(data)
+    if action in ["buy", "sell"]:
+        place_trade(action, 10)  # Place a trade with $10
+
+def on_error(ws, error):
+    print(error)
+
+def on_close(ws):
+    print("### closed ###")
+
+def on_open(ws):
+    print("### opened ###")
+
+websocket.enableTrace(True)
+ws = websocket.WebSocketApp("wss://iqoption.com/echo/websocket",
+                          on_message = on_message,
+                          on_error = on_error,
+                          on_close = on_close)
+ws.on_open = on_open
+ws.run_forever()
+
+# Trading strategy
+def trading_strategy(data):
+    # Example: Simple Moving Average Crossover
+    short_window = 10
+    long_window = 50
+
+    short_ma = sum(data[-short_window:]) / short_window
+    long_ma = sum(data[-long_window:]) / long_window
+
+    if short_ma > long_ma:
+        return "buy"
+    elif short_ma < long_ma:
+        return "sell"
+    else:
+        return "hold"
+
+# Place a trade
+def place_trade(action, amount):
+    trade_url = f"{API_URL}/trade"
+    payload = {
+        "action": action,
+        "amount": amount,
+        "asset": "EURUSD",
+        "type": "binary"  # or "digital" depending on your preference
+    }
+    response = session.post(trade_url, json=payload)
+    print(response.json())
     def __init__(self, api_key):
         self.api_key = api_key
         self.ws_url = "wss://ws.binaryws.com/websockets/v3?app_id=" + api_key
