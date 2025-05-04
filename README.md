@@ -6,7 +6,7 @@ A robust and intelligent trading bot built with Python for automating trades on 
 
 ## Features
 
-- **Automated trading** on the EURUSD asset (modifiable)
+- **Automated trade monitoring** on the EURUSD asset (modifiable)
 - **Technical indicators**:
     - RSI (Relative Strength Index)
     - EMA (Exponential Moving Averages)
